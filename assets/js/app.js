@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const roles = [
         { text: "Fullstack", color: "#FF5733" },
@@ -7,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { text: "FrontEnd", color: "#3357FF" }
     ];
 
+    const roleText = document.querySelector('.role-text');
     const animatedRoleElement = document.getElementById('animated-role');
     let roleIndex = 0;
     let charIndex = 0;
@@ -14,31 +13,34 @@ document.addEventListener("DOMContentLoaded", function () {
     const typingSpeed = 100;
     const deletingSpeed = 50;
     const pauseDuration = 1000;
+
+    function setRoleColor(color) {
+        animatedRoleElement.style.color = color;
+    }
+
     function typeWriter() {
         const currentRole = roles[roleIndex];
         const currentText = currentRole.text;
 
-        animatedRoleElement.style.color = currentRole.color;
+        setRoleColor(currentRole.color);
 
         if (isDeleting) {
-            animatedRoleElement.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
+            roleText.textContent = currentText.substring(0, charIndex);
 
-            if (charIndex === 0) {
+            if (charIndex <= 0) {
                 isDeleting = false;
                 roleIndex = (roleIndex + 1) % roles.length;
-
                 setTimeout(typeWriter, typingSpeed);
             } else {
                 setTimeout(typeWriter, deletingSpeed);
             }
         } else {
-            animatedRoleElement.textContent = currentText.substring(0, charIndex + 1);
             charIndex++;
+            roleText.textContent = currentText.substring(0, charIndex);
 
-            if (charIndex === currentText.length) {
+            if (charIndex >= currentText.length) {
                 isDeleting = true;
-
                 setTimeout(typeWriter, pauseDuration);
             } else {
                 setTimeout(typeWriter, typingSpeed);
@@ -46,5 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // iniciar con texto vacío
+    roleText.textContent = "";
     typeWriter();
 });

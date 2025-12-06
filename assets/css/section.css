@@ -1,0 +1,40 @@
+.Softitlan {
+    border-left: rgba(255, 0, 204, 0.296) solid 5px;
+    /* margin: 0px -14px 0px 0px;
+    padding: 5px -10px 5px 5px !important; */
+
+}
+.Softitlan section{
+    /* margin: 20px -14px 0px 0px;
+    padding: 10px -10px 5px 5px !important; */
+}
+
+.v1,
+.v2 {
+    border-left: rgb(255, 0, 0) solid 5px;
+
+}
+
+.Store {
+    border-left: rgb(0, 55, 255) solid 5px;
+}
+
+.Landing {
+    border-left: rgb(111, 121, 125) solid 5px;
+}
+
+.Bugs {
+    border-left: rgb(0, 247, 255) solid 5px;
+
+}
+
+.Experiencia {
+    border-left: rgba(153, 255, 0, 0.601) solid 5px;
+}
+
+a:hover{
+    transform: scale(1.2);
+}
+a{
+    text-decoration: none;
+}

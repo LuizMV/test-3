@@ -1,41 +1,49 @@
 body {
-    background: linear-gradient(to right, rgb(0, 153, 255), rgb(195, 0, 216));
+    /* background: linear-gradient(to right, rgb(0, 81, 255), rgb(195, 0, 216)); */
+    background: white;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* min-height: 200vh; */
-    display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(100px, 2fr);
-    /* sidebar + contenido */
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header main"
-        "header footer"
+    position: absolute;
 }
 
 .main-header {
-    grid-area: header;
-    top: 0;
+    top: 30%;
     position: sticky;
-    margin-top: 15px;
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+    margin: 5px 10px;
+    width: 200px;
     text-align: center;
-    padding: 20px;
     z-index: 2;
-
 }
 
 .main-header nav {
     display: flex;
     flex-direction: column;
+    /* border-left: orange solid 5px; */
+    border-radius: 10px;
+    gap: 30px;
+    padding: 10px;
+    position:sticky;
+    top: 30%;
+    /* box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.259); */
+
+}
+.main-header a{
+    text-align: center;
+    position: relative;
+    /* top: 10px; */
+
+    text-wrap: wrap;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
 }
 
 .main-footer {
     grid-area: footer;
     position: relative;
-    /* left: 250px; */
     justify-content: center;
 
     background: white;
@@ -59,26 +67,43 @@ body {
 }
 
 section {
+    grid-area: main;
     align-items: center;
     background-color: white;
-    padding: 15px;
-    margin: 15px 20px;
+    /* padding: 15px;
+    margin: 15px 20px; */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-left: #07ff03 5px solid;
     display: block;
+    text-align: justify;
+}
+main{
+    /* position: relative; */
+    top: 0;
+    /* width: 100%; */
 }
 
 .yo {
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
     display: flex;
     align-items: center;
     border-radius: 10px;
-    padding: 10px;
+    /* padding: 10px; */
     justify-content: center;
     gap: 10px;
     border-left: none;
     box-shadow: none;
+    height: 550px;
+    background: url("../img/mmmm.jpeg") ;
+    margin: 0%;
+    width: 100%;
+
+}
+.yo img{
+    width: 50%;
+    height: 50%;
+    
 }
 
 #animated-role {

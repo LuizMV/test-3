@@ -1,0 +1,229 @@
+section h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: static;
+    margin-bottom: 40px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: rgb(0, 110, 255);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+
+section {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    padding-left: 100px !important;
+}
+
+.yo {
+    height: 100vh;
+    color: #ddd;
+    position: relative;
+    background: url("../img/canchas11.jpg") center / cover no-repeat;
+}
+.yo::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+.yo * {
+    position: relative;
+    z-index: 2;
+    /* color: white; */
+}
+.yo>h1 {
+    margin-left: 5vh;
+}
+
+
+
+
+.sobre-mi {
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+    padding: 70px 0 100px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-flex-principal {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.sobre-mi img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.data-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 80px;
+}
+
+.informacion-derecha>h3 {
+    margin-top: 0;
+}
+
+
+.Experiencia {
+    padding: 70px 0;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.Softitlan {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.Softitlan section {
+    margin-top: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid rgb(0, 149, 255);
+    transition: 0.3s ease;
+}
+
+.Softitlan section:hover {
+    background: #eef7ff;
+    transform: translateX(5px);
+}
+
+
+
+
+.main-footer {
+    margin: 0;
+    margin-top: 80px;
+    padding: 60px 10vw;
+
+    background: linear-gradient(to right, #1a1a1a, #000000);
+    color: white;
+    border-radius: 15px 15px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-footer h2 {
+    color: white;
+}
+
+.main-footer p,
+.main-footer a {
+    font-size: 18px;
+    color: rgb(214, 214, 214);
+}
+
+.main-footer a {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.main-footer a:hover {
+    color: rgb(0, 149, 255);
+}
+
+.animated-text-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.animated-text-container h2 {
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+#animated-role {
+    display: inline-flex;
+    /* align-items: center; */
+    /* gap: 6px; */
+    min-width: 14ch;
+    max-width: 20ch;
+    align-self: center;
+    align-content: center;
+    padding-bottom: 10px;
+    /* box-sizing: content-box; */
+    /* vertical-align: middle; */
+}
+
+#animated-role::after {
+    content: none !important;
+}
+
+.role-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: currentColor;
+    animation: blink 0.7s steps(1) infinite;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: revealAnim linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes revealAnim {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

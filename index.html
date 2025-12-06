@@ -6,113 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí</title>
     <meta name="Description" content="Pagina sobre mi">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style01.css">
+    <link rel="stylesheet" href="./assets/css/style02.css">
+
+    <!-- <link rel="stylesheet" href="./assets/css/section.css"> -->
 </head>
 
 <body>
 
     <header class="main-header">
         <nav>
-            <a href="#sobre">Acerca de</a>
-            <a href="#trabajos">trabajos</a>
-            <a href="#personales">personales</a>
-            asdasda
+            <a href="#yo">👤</a>
+            <a href="#Experiencia">📋</a>
+            <a href="#Proyecto-personales">🛠️</a>
+            <a href="#Educacion">✍️</a>
+            <a href="#main-footer">📧</a>
         </nav>
     </header>
 
     <main>
-        <section id="yp" class="yo">
-            <p>Jose Luis Mellado Vela</p>
-            <p id="animated-text-container">
-                <span id="animated-role"></span>
-            </p>
-            <p>developer</p>
+        <section id="yo" class="yo">
+            <h1>Jose Luis Mellado Vela</h1>
+            <br>
+            <div id="animated-text-container" class="animated-text-container">
+                <h2>Ingeniero de Software</h2>
+
+                <h2 id="animated-role" class="animated-role">
+                    <span class="role-text" aria-hidden="true"></span>
+                    <span class="cursor" aria-hidden="true"></span>
+                </h2>
+
+                <h2>developer</h2>
+            </div>
+
         </section>
 
 
-        <section id="sobre" class="sobre-mi" aria-labelledby="sobre-h2">
-            <h2 id="sobre-h2">Sobre mi</h2>
-            <p>Hola, soy un entusiasta del desarrollo web y estoy comenzando mi viaje en el mundo del HTML. Me apasiona
-                crear sitios web atractivos y funcionales.</p>
+        <section id="sobre-mi" class="sobre-mi reveal" aria-labelledby="sobre-h2">
+            <h2>Sobre mi</h2>
+            <div class="contenido-principal">
+                <p>Hola, soy un entusiasta del desarrollo web y estoy comenzando mi viaje en el mundo del HTML. Me
+                    apasiona crear sitios web atractivos y funcionales.</p>
+            </div>
+            <div class="contenedor-flex-principal">
+                <img src="./assets/img/mmmm.jpeg" alt="Mi foto de perfil">
+                <div class="informacion-derecha">
+                    <h3>Diseñador UI/UX y Desarrollador FullStack</h3>
+
+                    <div class="data-center">
+                        <div class="data">
+                            <strong>Nombre: </strong>
+                            <p>Jose Luis Mellad Vela</p>
+                        </div>
+                        <div class="data">
+                            <strong>Telefono: </strong>
+                            <p>+52 241 119 4352</p>
+                        </div>
+                        <div class="data">
+                            <strong>Experiencia: </strong>
+                            <p>Junior</p>
+                        </div>
+                        <div class="data">
+                            <strong>Pais: </strong>
+                            <p>Mexicó</p>
+                        </div>
+                        <div class="data">
+                            <strong>gmail: </strong>
+                            <p>melladovelajoseluis@gmail</p>
+                        </div>
+                        <div class="data">
+                            <strong>github: </strong>
+                            <p></p>
+                        </div>
+                    </div>
+                    <p>asodijasdjkalsjdljasdjasjdkljasldjaskljdl</p>
+                </div>
+            </div>
         </section>
-        <section id="trabajos" class="trabajos">
+
+        <section id="Educacion" class="Educacion reveal">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <p>Ingeniería en Computación en la Universidad Autónoma de Tlaxcala (UATx) de Agosto de 2021 a
+                        Diciembre de 2025</p>
+                </li>
+                <li>
+                    <p>Taller de Desarrollo de sistemas con servicios rest (MYSQL + Springboot + NEXT JS + POSTMAN) en
+                        Noviembre 2024</p>
+                </li>
+                <li>
+                    <p>Taller de tecnología aplicada a la educación (utilidades prácticas de Internet y Google) en
+                        Noviembre 2023</p>
+                </li>
+            </ul>
+
+        </section>
+
+        <section id="Experiencia" class="Experiencia reveal">
             <h2>Experiencia</h2>
 
-            <section>
+            <section id="Softitlan" class="Softitlan">
                 <h3>Desarrollador full stack en Softitlan de Enero de 2021 a la fecha</h3>
                 <p>Realicé actividades de levantamiento de requerimientos, análisis de negocio, diseño de base de datos,
-                    diseño UI/UX, creación de APIs, programación de interfaces en React, TypeScript y Tailwind, así como
-                    desarrollo de servicios en Java Springboot. También implementé la base de datos en MySQL y participé
-                    en
-                    pruebas, corrección de errores menores, documentación y entrega final de los proyectos</p>
-                <section>
+                    diseño UI/UX, creación de APIs y desarrollo de interfaces en React, TypeScript y Tailwind, así como
+                    servicios backend en Java Spring Boot.
+                    También implementé bases de datos en MySQL y participé en pruebas, corrección de errores,
+                    documentación y entregas finales de los proyectos</p>
+                <section id="v1" class="v1">
                     <h4>Sistema de Gestión de Centro de Cómputo – Versión 1</h4>
-                    <p>Desarrollado para la Universidad Autónoma de Tlaxcala, utilizando HTML y PHP con Programación
-                        Orientada a Objetos (POO), usando las Apis de Google Works space</p>
+                    <p>Desarrollado para la Universidad Autónoma de Tlaxcala utilizando HTML, CSS, JavaScript y PHP con
+                        Programación Orientada a Objetos. Implementé integración con Google Sheets API como parte del
+                        ecosistema de Google Workspace, sincronizando información entre Google Sheets y MySQL</p>
                 </section>
-                <section>
+                <section id="v2" class="v2">
                     <h4>Sistema de Gestión de Centro de Cómputo – Versión 2</h4>
-                    <p>Segunda versión del sistema para la Universidad Autónoma de Tlaxcala, desarrollado con React y
-                        Java Spring Boot, usando las Apis de Google Works space?..</p>
+                    <p>Segunda versión del sistema para la Universidad Autónoma de Tlaxcala, desarrollada con React y
+                        Java Spring Boot. Integración con Google Sheets API para sincronización con Google Workspace</p>
                 </section>
-                <section>
+                <section id="Tortuga-Ninja" class="Tortuga-Ninja">
                     <h4>Sistema de Encriptación de Cuentas y Contraseñas</h4>
-                    <p>Administración, mantenimiento y actualizaciones. Desarrollado con Spring Boot y HTML,
-                        implementación de doble encriptación, usando el algoritmo AES-256</p>
+                    <p>Administración, mantenimiento y actualizaciones de un sistema desarrollado en Spring Boot y HTML,
+                        con implementación de doble encriptación AES-256, aplicando el algoritmo dos veces para reforzar
+                        la seguridad. Se realizaron mejoras de seguridad, pruebas y optimización continua</p>
+                    <a href="https://www.tortuganinja.com/">Tortuga Ninja</a>
                 </section>
-                <section>
+                <section id="Store" class="Store">
                     <h4>Sistema de Tienda con Gestión de Paquetería</h4>
-                    <p>Administración, mantenimiento y actualizaciones. Desarrollado en HTML, PHP y Google Sheets,
-                        usando las Apis de Google Works space, e implementar algoritmo propio el calculo de costo de
-                        envió entre el transporte terrestre y la distancia.</p>
+                    <p>Administración, mantenimiento y actualizaciones de un sistema desarrollado con HTML, CSS,
+                        JavaScript y PHP, utilizando Google Sheets API como base de almacenamiento. Implementé un
+                        algoritmo propio de cálculo de costos de envío terrestre con la utilización de APIs</p>
+                    <a href="https://store.sandbox.softitlan.com/">Softitlan Store</a>
                 </section>
-                <section>
+                <section id="Landing" class="Landing">
                     <h4>Sistema de Landing Page</h4>
-                    <p>Administración, mantenimiento y actualizaciones, responsivo para diferentes dispositivos, sección
-                        de videpjuegos web con unity e implementación de tema claro y oscuro</p>
+                    <p>Administración, mantenimiento y actualizaciones de una landing page responsiva desarrollada en
+                        HTML, CSS, JavaScript y PHP. Se implementó modo claro/oscuro y una sección de videojuegos
+                        desarrollados en Unity y exportados a WebGL</p>
+                    <a href="https://www.softitlan.com/">Softilan MX</a>
                 </section>
-                <section>
+                <section id="Bugs" class="Bugs">
                     <h4>Sistema interno de tickets de desarrollo</h4>
-                    <p>Administración, mantenimiento y actualizaciones, mejora la interfaz gráfica para la búsqueda y
-                        paginado de perfiles</p>
+                    <p>Administración, mantenimiento y mejoras del sistema interno de tickets, desarrollado con PHP,
+                        HTML, CSS y JavaScript. Se implementó un sistema avanzado de búsqueda con paginación, historial
+                        de navegación mediante ajustes en la URL, optimización de las librerías internas y mejora de las
+                        peticiones al backend para aumentar la eficiencia y la experiencia del usuario</p>
                 </section>
             </section>
 
         </section>
-        <section id="personales" class="personales">
-            <h2>Proyectos personales</h2>
-            <section>
-                <h3>Sistema Gestión de Ferretería desde 2022 hasta 2025</h3>
-                <p>Realice actividades de levantamiento de requerimientos, análisis de negocio, diseño de base de datos,
-                    diseño UI/UX, programación de interfaces en Angular, con desarrollo de servicios en PHP.</p>
-                <p> También implementé la base de datos en MySQL y participé en pruebas, corrección de errores menores,
-                    documentación y entrega final de los proyectos, con presentación de productos en modelado 3D</p>
-            </section>
-            <section>
-                <h3>Sistema Gestión de Ferretería desde 2022 hasta 2025</h3>
-                <p>Realice actividades de levantamiento de requerimientos, análisis de negocio, diseño de base de datos,
-                    diseño UI/UX, programación de interfaces en Angular, con desarrollo de servicios en PHP.</p>
-                <p> También implementé la base de datos en MySQL y participé en pruebas, corrección de errores menores,
-                    documentación y entrega final de los proyectos, con presentación de productos en modelado 3D</p>
-            </section>
-        </section>
-        <section>
-            <h2>Educación</h2>
-            <p>Ingeniería en Computación en la Universidad Autónoma de Tlaxcala (UATx) de Agosto de 2021 a Diciembre de
-                2025</p>
-        </section>
-        <section>
-            <h2>Idiomas</h2>
-            <p>Español: Nativo</p>
-            <p>Ingles Fluido</p>
-        </section>
+
 
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer reveal">
         <h2>Informacion de contacto</h2>
         <p><strong>Nombre: </strong>Jose Luis Mellado Vela</p>
         <p><strong>Telefono: </strong> +52 241 199 4352</p>
-        <a href="">linkendIn</a>
+        <a href="https://www.linkedin.com/in/jose-luis-mellado-vela/">linkendIn</a>
     </footer>
 
 
